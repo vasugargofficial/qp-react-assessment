@@ -1,6 +1,6 @@
 import { ReducerAction, Todo } from "@/types";
 
-export function createDummyTasks():Todo[] {
+export function createDummyTasks(): Todo[] {
     return Array.from({ length: 10000 }, (item, index) => {
         return {
             id: Math.random().toString(),
@@ -8,9 +8,9 @@ export function createDummyTasks():Todo[] {
             complete: false,
         }
     });
-}
+};
 
-export const reducer = (state: any, action: { type: ReducerAction; todo: Todo; }) => {
+export const reducer = (state: Todo[], action: { type: ReducerAction; todo: Todo; }) => {
     switch(action.type) {
         case 'ADD':
             return [action.todo].concat(state);
@@ -23,4 +23,4 @@ export const reducer = (state: any, action: { type: ReducerAction; todo: Todo; }
         default:
             return state;
     }
-}
+};
