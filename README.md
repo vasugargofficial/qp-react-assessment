@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+![image](https://github.com/vasugargofficial/qp-react-assessment/assets/46792281/fa93e82e-c79d-4caf-ad1c-51bf44fb52f9)
+
+
 ## Getting Started
 
 First, run the development server:
